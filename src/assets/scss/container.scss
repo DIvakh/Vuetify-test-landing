@@ -1,0 +1,46 @@
+// ====
+
+$x: 0.625rem;
+$x2: calc(2 * $x);
+$x3: calc(3 * $x);
+$x4: calc(4 * $x);
+$x5: calc(5 * $x);
+
+.container {
+  margin: auto;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    width: calc(100% - $x4);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    flex-basis: 1100px;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    flex-basis: 1280px;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    flex-basis: 1500px;
+    max-width: 1500px;
+  }
+}
+
+// ====
